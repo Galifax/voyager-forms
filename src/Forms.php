@@ -14,7 +14,7 @@ class Forms
 
     protected function model($name)
     {
-        return app($this->models[studly_case($name)]);
+        return app($this->models[$name]);
     }
 
     public function forms($key, $default = null)
